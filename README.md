@@ -1,30 +1,25 @@
-# React Redux Shopping Cart
+# Plant Paradise - React Redux Shopping Cart
 
-A simple shopping cart implementation using React and Redux Toolkit. This project demonstrates the use of Redux for state management in a React application.
+A modern e-commerce plant shop built with React and Redux Toolkit. This project demonstrates the implementation of a shopping cart with full state management capabilities.
 
 ## Features
 
-- Add items to cart
-- Remove items from cart
-- Update item quantities
-- Calculate total price
+- Landing page with company information and background image
+- Product listing page with categorized plants
+- Shopping cart with full functionality
+  - Add/Remove items
+  - Update quantities
+  - Calculate totals
 - Responsive design
+- Modern UI/UX
 
-## Technical Implementation
+## Technologies Used
 
-The project uses the following key features:
-
-- React for UI components
-- Redux Toolkit for state management
-- Modern ES6+ JavaScript
-- CSS for styling
-
-### Key Components
-
-- `CartSlice.jsx`: Implements Redux reducers for cart operations
-  - `addItem`: Adds a new item or increments quantity
-  - `removeItem`: Removes an item from the cart
-  - `updateQuantity`: Updates the quantity of an item
+- React 18
+- Redux Toolkit
+- React Router DOM
+- React Icons
+- Vite
 
 ## Getting Started
 
@@ -35,63 +30,34 @@ The project uses the following key features:
    ```
 3. Start the development server:
    ```bash
-   npm start
-   ```
-   or
-   ```bash
    npm run dev
    ```
+4. Open [http://localhost:5173](http://localhost:5173) in your browser
 
 ## Project Structure
 
 ```
-React_Redux_Cart/
-├── src/
-│   ├── components/
-│   │   ├── Cart.js
-│   │   └── Cart.css
-│   │   
-│   ├── redux/
-│   │   ├── CartSlice.jsx
-│   │   └── store.js
-│   │   
-│   ├── App.js
-│   │   
-│   ├── App.css
-│   │   
-│   ├── index.js
-│   │   
-│   └── index.css
-│   
-└── public/
-    └── index.html
+src/
+├── components/
+│   ├── Header.jsx
+│   ├── LandingPage.jsx
+│   ├── ProductList.jsx
+│   └── ShoppingCart.jsx
+├── redux/
+│   └── store.js
+├── CartSlice.jsx
+├── data/
+│   └── plants.js
+└── App.js
 ```
 
-## Technologies Used
+## Cart Functionality
 
-- React
-- Redux Toolkit
-- React Redux
+The cart implements three main reducer functions:
+- `addItem`: Adds a new item to the cart or increments quantity
+- `removeItem`: Removes an item from the cart
+- `updateQuantity`: Updates the quantity of an existing item
 
-## Usage
+## License
 
-```javascript
-// Import the actions
-import { addItem, removeItem, updateQuantity } from './CartSlice';
-
-// Add item to cart
-dispatch(addItem({
-  id: '1',
-  name: 'Product',
-  price: 29.99
-}));
-
-// Remove item from cart
-dispatch(removeItem('1'));
-
-// Update item quantity
-dispatch(updateQuantity({
-  id: '1',
-  quantity: 3
-}));
-``` 
+MIT 
