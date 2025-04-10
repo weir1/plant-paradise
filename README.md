@@ -1,63 +1,59 @@
 # Plant Paradise - React Redux Shopping Cart
 
-A modern e-commerce plant shop built with React and Redux Toolkit. This project demonstrates the implementation of a shopping cart with full state management capabilities.
+A modern e-commerce web application for plant shopping built with React and Redux. This project demonstrates the implementation of a shopping cart functionality using Redux for state management.
 
 ## Features
 
-- Landing page with company information and background image
-- Product listing page with categorized plants
-- Shopping cart with full functionality
-  - Add/Remove items
-  - Update quantities
-  - Calculate totals
+- Browse plants by categories
+- Add/remove items from cart
+- Real-time cart updates
 - Responsive design
-- Modern UI/UX
+- Filter plants by category
+- Price display and total calculation
 
 ## Technologies Used
 
-- React 18
+- React
 - Redux Toolkit
-- React Router DOM
-- React Icons
-- Vite
+- React Router
+- CSS Modules
+- Unsplash Images API
 
 ## Getting Started
 
 1. Clone the repository
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
-3. Start the development server:
-   ```bash
-   npm run dev
-   ```
-4. Open [http://localhost:5173](http://localhost:5173) in your browser
+```bash
+git clone https://github.com/weir1/plant-paradise.git
+cd plant-paradise
+```
+
+2. Install dependencies
+```bash
+npm install
+```
+
+3. Start the development server
+```bash
+npm start
+```
+
+4. Open [http://localhost:3000](http://localhost:3000) to view it in your browser
 
 ## Project Structure
 
 ```
 src/
-├── components/
-│   ├── Header.jsx
-│   ├── LandingPage.jsx
-│   ├── ProductList.jsx
-│   └── ShoppingCart.jsx
-├── redux/
-│   └── store.js
-├── CartSlice.jsx
-├── data/
-│   └── plants.js
-└── App.js
+  ├── components/     # React components
+  ├── features/       # Redux slices and features
+  ├── data/          # Static data and constants
+  ├── styles/        # CSS styles
+  └── App.js         # Main application component
 ```
 
-## Cart Functionality
+## Contributing
 
-The cart implements three main reducer functions:
-- `addItem`: Adds a new item to the cart or increments quantity
-- `removeItem`: Removes an item from the cart
-- `updateQuantity`: Updates the quantity of an existing item
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
 ## License
 
-MIT 
+[MIT](https://choosealicense.com/licenses/mit/) 
